@@ -1,18 +1,29 @@
 import React from "react";
 import "./list.scss";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import ListItem from "../listitem/ListItem";
 const List = () => {
   return (
     <div className="list">
       <span className="listTitle">Continue to watch</span>
       <div className="wrapper">
-        <ArrowBackIosOutlinedIcon />
+        <ArrowBackIosOutlinedIcon className='sliderArrow left' />
         <div className="container">
           <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
         </div>
-        <ArrowForwardOutlinedIcon />
+        <ArrowForwardIosOutlinedIcon  className='sliderArrow right'/>
       </div>
     </div>
   );
